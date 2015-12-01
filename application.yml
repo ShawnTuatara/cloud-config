@@ -10,9 +10,6 @@ eureka:
 ---
 spring:
   profiles: lattice-local
-  cloud:
-    config:
-      uri: http://config-server.local.lattice.cf/
   rabbitmq:
     host: ${RABBIT_MQ_HOST:192.168.11.11}
     username: ${RABBIT_MQ_USERNAME:sclark}
