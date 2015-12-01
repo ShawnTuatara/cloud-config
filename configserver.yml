@@ -1,0 +1,11 @@
+---
+spring:
+  profiles: lattice-local
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://192.168.56.101/sclark/cloud-config.git
+          username: sclark
+          password: zKQTS6AFuACjrOQA8J2d 
+          basedir: /tmp/config

@@ -1,0 +1,23 @@
+management:
+  context-path: /admin
+eureka:
+  instance:
+    metadata-map:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    statusPageUrlPath: ${management.context-path}/info
+    healthCheckUrlPath: ${management.context-path}/health
+    
+---
+spring:
+  profiles: lattice-local
+  cloud:
+    config:
+      uri: http://config-server.local.lattice.cf/
+  rabbitmq:
+    host: ${RABBIT_MQ_HOST:192.168.11.11}
+    username: ${RABBIT_MQ_USERNAME:sclark}
+    password: ${RABBIT_MQ_PASSWORD:test123}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://service-registry.local.lattice.cf/eureka/

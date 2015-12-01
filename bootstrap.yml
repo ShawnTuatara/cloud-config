@@ -1,0 +1,6 @@
+---
+spring:
+  profiles: lattice-local
+  cloud:
+    config:
+      uri: ${SPRING_CLOUD_CONFIG_URI:http://config-server.local.lattice.cf}
