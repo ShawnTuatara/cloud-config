@@ -25,3 +25,8 @@ logging:
         cloud:
           netflix:
             zuul: DEBUG
+    org:
+      apache:
+        http:
+          impl:
+            client: DEBUG
