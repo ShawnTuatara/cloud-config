@@ -18,3 +18,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://service-registry.local.lattice.cf/eureka/
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          netflix:
+            zuul: DEBUG
