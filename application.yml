@@ -20,17 +20,3 @@ eureka:
       defaultZone: http://service-registry.local.lattice.cf/eureka/
   instance:
     securePortEnabled: false
-logging:
-  level:
-    com:
-      netflix:
-        niws:
-          client:
-            http: DEBUG
-    org:
-      apache:
-        http:
-          impl:
-            client: DEBUG
-      springframework:
-        cloud: DEBUG
