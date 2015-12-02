@@ -20,6 +20,11 @@ eureka:
       defaultZone: http://service-registry.local.lattice.cf/eureka/
 logging:
   level:
+    com:
+      netflix:
+        niws:
+          client:
+            http: DEBUG
     org:
       apache:
         http:
