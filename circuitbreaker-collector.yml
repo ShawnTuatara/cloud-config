@@ -1,6 +1,9 @@
 server:
-  port: -1
-  
+  port: 8080
+turbine:
+  amqp:
+    port: 8989
+    
 ---
 spring:
   profiles: lattice-local
