@@ -7,7 +7,3 @@ turbine:
 ---
 spring:
   profiles: lattice-local
-logging:
-  level:
-    org:
-      springframework: DEBUG
