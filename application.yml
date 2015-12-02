@@ -31,6 +31,4 @@ logging:
           impl:
             client: DEBUG
       springframework:
-        cloud:
-          netflix:
-            zuul: DEBUG
+        cloud: DEBUG
