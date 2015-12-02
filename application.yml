@@ -18,6 +18,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://service-registry.local.lattice.cf/eureka/
+  instance:
+    securePortEnabled: false
 logging:
   level:
     com:
