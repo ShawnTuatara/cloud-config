@@ -1,5 +1,9 @@
 server:
-  port: -1
+  port: 8989
+  
+---
+spring:
+  profiles: lattice-local
 logging:
   level:
     org:
