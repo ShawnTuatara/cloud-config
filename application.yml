@@ -21,12 +21,11 @@ eureka:
 logging:
   level:
     org:
-      springframework:
-        cloud:
-          netflix:
-            zuul: DEBUG
-    org:
       apache:
         http:
           impl:
             client: DEBUG
+      springframework:
+        cloud:
+          netflix:
+            zuul: DEBUG
