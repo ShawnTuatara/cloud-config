@@ -19,4 +19,6 @@ eureka:
     service-url:
       defaultZone: http://service-registry.local.lattice.cf/eureka/
   instance:
+    hostname: ${CF_INSTANCE_IP:localhost}
+    nonSecurePort: ${CF_INSTANCE_PORT:${PORT:${server.port:8080}}}
     securePortEnabled: false
