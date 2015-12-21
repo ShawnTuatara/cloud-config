@@ -27,13 +27,13 @@ eureka:
 spring:
   profiles: lattice-aws
   rabbitmq:
-    host: ${RABBITMQ_HOST:52.71.6.88.xip.io}
+    host: ${RABBITMQ_HOST:52.20.207.103.xip.io}
     username: ${RABBITMQ_USERNAME:sclark}
     password: ${RABBITMQ_PASSWORD:test123}
 eureka:
   client:
     service-url:
-      defaultZone: http://service-registry.52.71.6.88.xip.io/eureka/
+      defaultZone: http://service-registry.52.20.207.103.xip.io/eureka/
   instance:
     hostname: ${CF_INSTANCE_IP:localhost}
     nonSecurePort: ${CF_INSTANCE_PORT:${PORT:${server.port:8080}}}
